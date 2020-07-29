@@ -90,7 +90,7 @@ p.wrap-payment-title {
     border: #4069e1 1px solid;
     color: #4069e1;
     font-weight: normal;
-    border-radius: 3px;
+    border-radius: 5px;
     line-height: 1.5;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
     cursor: pointer;
@@ -114,7 +114,8 @@ p.wrap-payment-title {
 }
 
 .wrap-payment-container:first-child {
-    border: 1px solid #dcdcdc
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
 }
 
 .wrap-payment-container {
@@ -241,6 +242,8 @@ p.wrap-payment-title {
     margin-left: 15px;
     margin-top: 15px;
     font-size: 14px;
+    width: 97%;
+    border-radius: 5px;
     position: relative;
 }
 
