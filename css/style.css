@@ -1,0 +1,311 @@
+input {outline:none;}
+.wrap {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'OpenSans', sans-serif;
+    color: #283544;
+}
+
+.wrap svg,
+.wrap img {
+    width: 100%;
+    height: 100%;
+}
+.wrap ul,
+.wrap ul ul {
+    list-style: none;
+}
+
+.wrap-checkout {
+    position: relative;
+}
+
+p.wrap-checkout-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.wrap-checkout-product {
+    position: relative;
+    margin-top: 2%;
+}
+
+p.wrap-checkout-product-title,
+p.wrap-checkout-shipping-title,
+p.wrap-payment-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrap-checkout-product li,
+.wrap-checkout-shipping li {
+    display: flex;
+    width: 100%;
+}
+
+.wrap-checkout-product li p:first-child,
+.wrap-checkout-shipping li p:first-child {
+    width: 90%;
+}
+.wrap-checkout-product li p:first-child {
+    color: #4069e1;
+    text-decoration: underline;
+}
+
+.wrap-checkout-product li p:last-child,
+.wrap-checkout-shipping li p:last-child {
+    width: 10%;
+    text-align: right;
+}
+
+.wrap-tabs {
+    font-size: 0;
+}
+
+.wrap-tabs>input[type="radio"] {
+    display: none;
+}
+
+.wrap-tabs>div {
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+#creditcard:checked~#wrap-content-creditcard,
+#giftcard:checked~#wrap-content-giftcard,
+#paypal:checked~#wrap-content-paypal {
+    display: block;
+}
+
+.wrap-tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    width: 27%;
+    padding: 8px 17px;
+    margin-left: 14px;
+    border: #4069e1 1px solid;
+    color: #4069e1;
+    font-weight: normal;
+    border-radius: 3px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    font-size: 15px;
+}
+
+.wrap-tabs>input[type="radio"]:checked+label {
+    background-color: #4069e1;
+    color: #fff;
+}
+
+.wrap-payment {
+    position: relative;
+}
+
+.wrap-payment-containers {
+    display: flex;
+    position: relative;
+}
+
+.wrap-payment-container:first-child {
+    border: 1px solid #dcdcdc
+}
+
+.wrap-payment-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 90px 90px 90px;
+    width: 60%;
+    padding: 10px;
+}
+
+.wrap-payment-container p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wrap-payment-container p span {
+    color: red;
+}
+
+.wrap-payment-container:last-child {
+    width: 40%;
+}
+
+#cardnumber {
+    background: url(../images/card-image.png) 99% 50% no-repeat;
+    background-size: 10%;
+}
+
+.wrap-payment-field-date {
+    display: flex;
+}
+
+.wrap-payment-field-date input {
+    width: 11%;
+    height: 100%;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.wrap-payment-field-date p {
+    margin-top: 10px;
+}
+
+.wrap-payment-field-date input:last-child {
+    margin-left: 10px;
+}
+
+.wrap-payment-field {
+    position: relative;
+}
+
+.wrap-payment-field input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap-payment-container .wrap-payment-field:first-of-type {
+    grid-area: 1;
+}
+
+.wrap-payment-container .wrap-payment-field:nth-of-type(2) {
+    grid-area: 2;
+}
+
+.wrap-payment-container .wrap-payment-field:nth-of-type(3) {
+    grid-area: 3;
+}
+
+.wrap-payment-container:last-child .wrap-payment-field:first-of-type {
+    grid-area: 1;
+    width: 40%;
+}
+
+.wrap-payment-field-qu {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 58px;
+    right: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wrap-payment-field-qu-tooltip {
+    display: none;
+}
+
+.wrap-payment-field-qu div {
+
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.wrap-payment-field-qu div p {
+    margin: auto;
+    text-align: center;
+    background: #cdcdcdcd;
+    padding: 0;
+    border-radius: 100%;
+}
+
+
+.wrap-payment-field-qu div:hover p {
+    color: #fff;
+    background: #4069e1;
+}
+
+.wrap-payment-field-qu div:hover+.wrap-payment-field-qu-tooltip {
+    display: block;
+    background: none;
+    border-radius: 0;
+    position: absolute;
+    top: -15px;
+    right: -60px;
+    width: 50px;
+}
+
+.wrap-checkbox {
+    display: flex;
+    background: #fcfcfc;
+    padding: 0px 10px;
+    border: 1px #cdcdcdcd solid;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    position: relative;
+}
+
+.wrap-checkbox input {
+    width: 5%;
+    margin: auto
+}
+
+.wrap-checkbox-text {
+    width: 95%;
+}
+
+.wrap-checkbox-text label{
+    width: 80%;
+    font-weight: normal;
+    border-bottom: 1px #819ab5 dotted;
+    color: #819ab5;
+    cursor: pointer;
+}
+
+
+.wrap-checkbox-text-hover {
+    display: none;
+    font-size: 13px;
+    padding: 5px 20px;
+    width: 60%;
+    height: 300px;
+    overflow-y: scroll;
+    background: #fcfcfc;
+    border: 1px #cfd8e3 solid;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    left: 0;
+    MARGIN: 0 auto;
+    z-index: 40;
+}
+
+#terms_hover {
+    display: none;
+}
+
+#terms_hover[type=checkbox]:checked ~ .wrap-checkbox-text-hover {
+    display: block;
+}
+
+#wrap_button {
+    margin-top: 15px;
+    margin-left: 15px;
+    background: #ff5318;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+label span {
+    color: red;
+}
+
+input {
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #cfd8e3;
+}
